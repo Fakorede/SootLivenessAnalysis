@@ -1,0 +1,45 @@
+public class sootlivenessanalysis.App extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        sootlivenessanalysis.App r0;
+
+        r0 := @this: sootlivenessanalysis.App;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.String getGreeting()
+    {
+        sootlivenessanalysis.App r0;
+
+        r0 := @this: sootlivenessanalysis.App;
+
+        return "Hello World!";
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        sootlivenessanalysis.App $r1;
+        java.io.PrintStream $r2;
+        java.lang.String $r3;
+
+        r0 := @parameter0: java.lang.String[];
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new sootlivenessanalysis.App;
+
+        specialinvoke $r1.<sootlivenessanalysis.App: void <init>()>();
+
+        $r3 = virtualinvoke $r1.<sootlivenessanalysis.App: java.lang.String getGreeting()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>($r3);
+
+        return;
+    }
+}
